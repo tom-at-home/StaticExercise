@@ -61,12 +61,12 @@ public class Company {
 				Employee currEmp = this.manager.get(manager).getEmployees().get(emp);
 				
 				System.out.println("\t" + currEmp.getName());
-				System.out.println(((Seller) currEmp).calcSalary());
-				
+				if(currEmp instanceof Seller){
+					System.out.println("\t" + ((Seller) currEmp).calcSalary());
+				}
 			}
 			
 		}
-		
 		
 	}
 	

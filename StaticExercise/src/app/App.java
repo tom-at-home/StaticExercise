@@ -28,7 +28,7 @@ public class App {
 		Seller purc2 = new Seller("Andreas Einkauf", 23);
 		em.addEmployee(purc2);		
 		
-		company.showStaff();
+		//company.showStaff();
 		
 		//System.out.println(vm.calcSalary());
 		//System.out.println(purc1.calcSalary());
