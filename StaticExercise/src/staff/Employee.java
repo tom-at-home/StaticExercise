@@ -17,6 +17,8 @@ public abstract class Employee {
 		
 	}
 
+	public abstract float calcSalary();
+
 	public String getName() {
 		return name;
 	}

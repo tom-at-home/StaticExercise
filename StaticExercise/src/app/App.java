@@ -31,7 +31,7 @@ public class App {
 
 		Company company2 = new Company("Firma 2");
 
-		Company.move(em, company1, company2);
+		//Company.move(em, company1, company2);
 
 		System.out.println("Company1 Staff");
 		company1.showStaff();

@@ -81,12 +81,13 @@ public class Company {
 
                 Employee currEmp = this.manager.get(manager).getEmployees().get(emp);
 
-                if (currEmp instanceof Seller) {
+                /*if (currEmp instanceof Seller) {
                     sum += ((Seller) currEmp).calcSalary();
                 }
                 if (currEmp instanceof Buyer) {
                     sum += ((Buyer) currEmp).calcSalary();
-                }
+                }*/
+                sum += currEmp.calcSalary();
             }
 
         }
@@ -111,14 +112,17 @@ public class Company {
 
                 Employee currEmp = this.manager.get(manager).getEmployees().get(emp);
 
-                if (currEmp instanceof Seller) {
+                /*if (currEmp instanceof Seller) {
                     sum += ((Seller) currEmp).calcSalary();
                     counter++;
                 }
                 if (currEmp instanceof Buyer) {
                     sum += ((Buyer) currEmp).calcSalary();
                     counter++;
-                }
+                }*/
+                sum += currEmp.calcSalary();
+                counter++;
+
             }
 
         }
@@ -143,12 +147,14 @@ public class Company {
 
                     Employee currEmp = this.manager.get(manager).getEmployees().get(emp);
 
-                    if (currEmp instanceof Seller) {
+                    /*if (currEmp instanceof Seller) {
                         sum += ((Seller) currEmp).calcSalary();
                     }
                     if (currEmp instanceof Buyer) {
                         sum += ((Buyer) currEmp).calcSalary();
-                    }
+                    }*/
+                    sum += currEmp.calcSalary();
+
                 }
             }
         }
@@ -174,14 +180,16 @@ public class Company {
 
                     Employee currEmp = this.manager.get(manager).getEmployees().get(emp);
 
-                    if (currEmp instanceof Seller) {
+                    /*if (currEmp instanceof Seller) {
                         sum += ((Seller) currEmp).calcSalary();
                         counter++;
                     }
                     if (currEmp instanceof Buyer) {
                         sum += ((Buyer) currEmp).calcSalary();
                         counter++;
-                    }
+                    }*/
+                    sum += currEmp.calcSalary();
+                    counter++;
                 }
             }
         }
