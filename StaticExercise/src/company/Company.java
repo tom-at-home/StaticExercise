@@ -70,7 +70,31 @@ public class Company {
 		
 	}
 	
-	public void getSalaryAvg(){
+	public float getSalaryAvg(){
+		
+		float avg = 0;
+		int counter = 0;
+		
+		for (int manager = 0; manager < this.manager.size(); manager++){
+			
+			DepartmentManager currMan = this.manager.get(manager);
+			counter++;
+						
+			avg += currMan.calcSalary();
+			
+			for (int emp = 0; emp < this.manager.get(manager).getEmployees().size(); emp++){
+				
+				Employee currEmp = this.manager.get(manager).getEmployees().get(emp);
+				
+				if(currEmp instanceof Seller){
+					avg += ((Seller) currEmp).calcSalary();
+					counter++;
+				}
+			}
+			
+		}
+		
+		return avg / counter;
 		
 	}
 	

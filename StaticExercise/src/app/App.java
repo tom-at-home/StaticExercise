@@ -34,6 +34,8 @@ public class App {
 		//System.out.println(purc1.calcSalary());
 		
 		company.getSalarySum();
+		
+		System.out.println(company.getSalaryAvg());
 	}
 
 }
