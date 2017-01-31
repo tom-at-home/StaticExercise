@@ -1,14 +1,19 @@
 package staff;
 
+import company.Company;
+
 public abstract class Employee {
 
 	private String name;
 	private int age;
+	private Company company;
 	
-	public Employee(String name, int age){
+	public Employee(String name, int age, Company company){
 		
 		this.name = name;
 		this.age = age;
+		this.company = company;
+		company.employees.add(this);
 		
 	}
 

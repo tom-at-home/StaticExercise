@@ -1,14 +1,23 @@
 package staff;
+import company.Company;
+
 import java.util.ArrayList;
 
 public class DepartmentManager extends Employee{
 
 	private ArrayList<Employee> employees = new ArrayList<>();
 
-	public DepartmentManager(String name, int age) {
-		super(name, age);
+	private String division;
+
+	public DepartmentManager(String name, int age, Company company, String division) {
+		super(name, age, company);
+		this.division = division;
 	}
-	
+
+	public String getDivision() {
+		return division;
+	}
+
 	public ArrayList<Employee> getEmployees() {
 		return employees;
 	}

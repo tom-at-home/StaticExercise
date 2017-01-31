@@ -1,10 +1,12 @@
 package staff;
+import company.Company;
+
 import java.util.ArrayList;
 
 public class Seller extends Employee{
 
-	public Seller(String name, int age) {
-		super(name, age);
+	public Seller(String name, int age, Company company) {
+		super(name, age, company);
 		
 	}
 
