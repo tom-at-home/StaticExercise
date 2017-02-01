@@ -24,7 +24,7 @@ public class DepartmentManager extends Employee{
 
 	public float calcSalary(){
 		
-		float salary = 0;	
+		float salary = 0;
 		//salary = 2000 * (1 + ((float)this.getAge() / 100));
 		salary = 2000;
 		return salary;

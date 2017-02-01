@@ -36,8 +36,8 @@ public class App {
 		System.out.println("Company1 Staff");
 		company1.showStaff();
 
-		System.out.println("Company2 Staff");
-		company2.showStaff();
+//		System.out.println("Company2 Staff");
+//		company2.showStaff();
 		
 		//System.out.println(vm.calcSalary());
 		//System.out.println(purc1.calcSalary());
@@ -51,8 +51,6 @@ public class App {
 
 		System.out.println("Gehaelter Verkauf Total: " + company1.getDivSalarySum("Verkauf"));
 		System.out.printf("Gehaelter Verkauf Durchschnitt: %.2f%n", company1.getDivSalaryAvg("Verkauf"));
-
-
 
 	}
 

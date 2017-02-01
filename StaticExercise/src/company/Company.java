@@ -26,8 +26,8 @@ public class Company {
 //        destination.employees.add(employee);
 //    }
 
-    public static void move(DepartmentManager employee, Company origin, Company destination) {
-        origin.manager.remove(employee);
+    public static void move(DepartmentManager employee, Company source, Company destination) {
+        source.manager.remove(employee);
         destination.manager.add(employee);
     }
 
